@@ -14,8 +14,8 @@ jobs:
       - name: build image and push to docker hub
         uses: docker/build-push-action@v1.1.0
         with:
-          username: vagnerfls
-          password: Vfls@2023
+          username: "vagnerfls"
+          password: "Vfls@2023"
           repository: vagnerfls/argocd
           tags: $({ github.sha }), latest 
         
