@@ -7,6 +7,6 @@ resources:
 namespace: goapp
 
 images:
-  - name: goapp
+  - name: vagnerfls/argocd
     newName: goapp
     newTag: v1
