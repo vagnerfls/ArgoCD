@@ -1,21 +1,19 @@
-name: cd 
+name: CD
 on:
   push:
     branches: [main]
-
 jobs:
   build:
-    name: build
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v2
       
       - name: build image and push to docker hub
-        uses: docker/bake-action@v4
+        uses: docker/build-push-action@v1.1.0
         with:
-          username: vagnerfls
+          username: wesleywillians
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: vagnerfls/argocd
-          tags: $({ github.sha }), latest
-        
+          repository: wesleywillians/argocd-fullcycle
+          tags: ${{ github.sha }}, latest     

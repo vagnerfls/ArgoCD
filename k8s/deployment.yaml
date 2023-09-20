@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: goapp
-        image: vagnerfls/argocd
+        image: goapp
         resources: {}
         ports:
         - containerPort: 8080
