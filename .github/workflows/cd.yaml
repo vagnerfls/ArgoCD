@@ -15,7 +15,7 @@ jobs:
         uses: docker/bake-action@v4
         with:
           username: vagnerfls
-          password: ${{ secret.DOCKER_PASSWORD }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
           repository: vagnerfls/argocd
           tags: $({ github.sha }), latest
         
