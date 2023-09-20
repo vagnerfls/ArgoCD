@@ -9,4 +9,4 @@ namespace: goapp
 images:
 - name: goapp
   newName: vagnerfls/argocd
-  newTag: e2c76015e7a59a9627de93e2025ceeb19a7eacc1
+  newTag: 9b892594a21e94ea014b559b36d1404216652ddf
